@@ -6,13 +6,11 @@ React GraphQL 16.6.0 app with Apollo client.
 
 2. Initialize ApolloClient and get elements you want to use:
 ```
-
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 ```
 
 3. Config the client with URI:
 ```
-
 const client = new ApolloClient({
   uri: 'https://www.URL.com',
   cache: new InMemoryCache(),
@@ -36,7 +34,7 @@ client
   })
   .then((result) => console.log(result));
 ```
-5. Wraps the app with <ApolloProvider client={client}>
+5. Wraps the app with `<ApolloProvider client={client}>`
 
 6. Request data with useQuery
 ```
